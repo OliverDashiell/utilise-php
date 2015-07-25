@@ -1,0 +1,20 @@
+{
+    "name": "oliverdashiell/utilise-php",
+    "description": "Group of utility functions (currently providing password storage using pbkdf2).",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oliver Dashiell Bunyan",
+            "email": "oliverdashiell@gmail.com"
+        },
+        {
+            "name": "James Stidard",
+            "email": "jamesstidard@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=5.5.0"
+    }
+}
