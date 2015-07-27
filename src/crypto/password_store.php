@@ -2,7 +2,7 @@
 
 // Current password storage strategem
 // Can be modified (passwords will be updated to newest spec next time correctly validated)
-const ITERATIONS = 1000;
+const ITERATIONS = 10000;
 const ALGORITHM  = "sha512";
 const HASH_BYTES = 64;
 const SALT_BYTES = HASH_BYTES;
