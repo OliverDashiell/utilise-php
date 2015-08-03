@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Utilise\\" : "utilise-php/src/"
+            "Utilise\\" : "src/"
         }
     }
 }
