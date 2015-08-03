@@ -17,7 +17,7 @@ class Crypto
 	}
 
 	public static function change_password($stored_password, $old_password, $new_password, $new_salt=null, $legacy_password_validator=null) {
-		return change_password($stored_password, $old_password, $new_password, $new_salt, $legacy_password_validator)
+		return change_password($stored_password, $old_password, $new_password, $new_salt, $legacy_password_validator);
 	}
 }
 
