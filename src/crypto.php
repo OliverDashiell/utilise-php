@@ -1,5 +1,6 @@
 <?php 
 
+namespace Utilise;
 include 'crypto/password_store.php';
 
 /**
