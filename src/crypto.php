@@ -1,6 +1,6 @@
 <?php 
 
-include '/crypto/password_store.php';
+include 'crypto/password_store.php';
 
 /**
 * 
