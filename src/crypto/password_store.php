@@ -29,9 +29,10 @@ function create_password($password, $salt=null) {
 
 		return ALGORITHM . DELIMITER . ITERATIONS . DELIMITER . $salt . DELIMITER . $hash;
 	} 
+	else if ($crypto_strong != true)       throw new Exception("System unable to generate a cryptographically secure salt for password storage. Check your server configuration meets the requirments of the openssl_random_pseudo_bytes() PHP function.");
+	else if (strlen($salt)  != SALT_BYTES) throw new Exception("The provided salt does not meet the required salt length (in bytes) of the current strategem. Provided: ".strlen($salt).", Expected: ".SALT_BYTES);
 
-	if ($crpyto_strong == true)      throw new Exception("System unable to generate a cryptographically secure salt for password storage. Check your server configuration meets the requirments of the openssl_random_pseudo_bytes() PHP function.");
-	if (strlen($salt) == SALT_BYTES) throw new Exception("The provided salt does not meet the required salt length (in bytes) of the current strategem. Provided: ".strlen($salt).", Expected: ".SALT_BYTES);
+	return null;
 }
 
 // Takes the data stored in the users password field and the guessed password. optionally takes a update_strategem bool (defaults to true).
